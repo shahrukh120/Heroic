@@ -2,7 +2,11 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 import numpy as np
 from sklearn.datasets import load_iris
+import streamlit as st
 
+def main():
+    st.title('Hello, Streamlit!')
+    st.write('This is a simple Streamlit app.')
 app = Flask(__name__)
 
 # Load the model and scaler
